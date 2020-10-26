@@ -1,0 +1,203 @@
+* {
+    font-family: "Josefin Sans", sans-serif !important
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+body {
+    position: absolute;
+    margin: 0% 5%;
+    width: 90%;
+    height: 100%;
+    background-image: url(../img/bg.png)
+}
+
+header {
+    position: absolute;
+    top: 0%;
+    height: 15%;
+    font-size: 2.3vh
+}
+
+header img {
+    width: 5vh;
+    height: 5vh
+}
+
+nav {
+    position: absolute;
+    top: 15%;
+    height: 5%
+}
+
+header,
+nav {
+    margin: 0% 0% 0% 5%;
+}
+
+/* Tables */
+
+#accordion {
+    max-height: 100%
+}
+
+.ui-accordion-content {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 0px !important;
+    overflow: scroll !important
+}
+
+table.report {
+    border: solid 1px #aaaaaa;
+    border-radius: 5px;
+    border-collapse: collapse;
+    height: 100%;
+    width: 99%;
+}
+
+table.report tr:nth-child(even) {
+    background-color: #cccccc;
+}
+
+table.report th,
+table.report td {
+    padding: 0px 1px
+}
+
+table.report th {
+    text-align: center
+}
+
+table.report td.center-align {
+    text-align: center
+}
+
+table.report td.right-align {
+    text-align: right
+}
+
+table.report textarea {
+    width: 100%
+}
+
+iframe {
+    display: none
+}
+
+/* jQuery UI edits*/
+.ui-menu:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+.ui-menu .ui-menu-item {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: auto
+}
+
+#annate.ui-tabs,
+.ui-tabs-nav {
+    background: none;
+    border: 0px
+}
+
+.ui-tabs-nav {
+    height: 5vh
+}
+
+.ui-tabs {
+    width: 100% !important;
+    height: 100% !important
+}
+
+.ui-tabs-tab {
+    height: 100%
+}
+
+.ui-tabs-tab img {
+    max-width: 100%;
+    max-height: 3vh
+}
+
+.ui-tabs-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1px 0px 0px 0px !important;
+    overflow: hidden !important;
+    text-align: center
+}
+
+.ui-tabs-panel>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.ui-tabs-panel>fieldset {
+    position: relative;
+    top: -75%;
+    display: inline;
+}
+
+.ui-tabs-panel>fieldset,
+.ui-tabs-panel>fieldset legend {
+    background-color: #dddddd
+}
+
+/* Smartphone */
+nav,
+main {
+    font-size: 2vh
+}
+
+main {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 80%
+}
+
+footer {
+    display: none
+}
+
+/* Tablet (portrait) */
+@media only screen and (min-width: 768px) {
+    main {
+        height: 75%
+    }
+
+    footer {
+        display: block;
+        position: absolute;
+        top: 95%;
+        margin: 0% 5% 0% 0%;
+        width: 95%;
+        height: 5%;
+        text-align: right
+    }
+
+    footer img {
+        max-width: 10%;
+        max-height: 20px;
+        vertical-align: middle;
+        margin: 5px 5px
+    }
+}
+
+/* Tablet (landscape) */
+@media only screen and (min-width: 1024px) {}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {}
